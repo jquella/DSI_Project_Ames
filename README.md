@@ -49,9 +49,43 @@ Lastly, I needed to find out if there were still *null values* sticking around, 
 <a id='model_data'></a>
 ### Model Data.
 
+I ran four different Linear Regression model types: 
+1. *Linear Regression:* default
+2. *Ridge Regression:* penalizes wrong guesses, but will not zero out coefficients.
+3. *Lasso Regression:* penalizes wrong guesses, but *may* drop coefficients.
+4. *Elastic Net:* Balance between *Ridge* and *Lasso*.
+
+<a id='evaluate_model'></a>
+### Evaluate Model.
+
+** Scores for the models here**
 
  **Model** | **R^2 Score (Train)** | **R^2 Score (Test)** 
  --- |	--- | --- 
  Linear Regression 	|	0.726	| 0.675 
  Ridge Regression		|	0.773	| 0.700 
- Lasso Regression 		|	0.773	| 0.700 
+ Lasso Regression 		|	0.775	| 0.698 
+ Elastic Net 			|	0.774	| 0.697 
+
+These R^2 scores are not ideal. While being able to explain nearly 80% of the variance in house price seems good, it can likely be improved. This mainly seems to be in part due to a large outlier in the predictions:
+<img src="https://i.imgur.com/7irAXIT.png">
+In exploring the data further, it seems that this was likely due to a single outlier data point in one of the strongest features: `Gr Liv Area` - or above ground living area.
+<img src="https://i.imgur.com/7wVnQJe.png">
+
+The next iterations of models should perhaps account for outliers in some way to generate better predictions.
+
+<a id='answer_question'></a>
+### Answer Question.
+
+**Q: Were we able to predict home prices?** 
+
+**A:** Somewhat. The R^2 scores  were fairly low (70-80% range) compared to what I think is possible to achieve. That said, I *did* achieve the objective of following the data science workflow, improving EDA, plotting and modeling skills, and was able to predict prices within the expected range. I just wouldn't make an investment strategy out of it :)
+
+**Next steps**
+1. More feature selection and engineering work.
+    - Involve more categorical variables
+    - Have separate models for outliers
+    - Try polynomial features on more data
+    - Use `itertools.combinations` to try more variations of feature combos
+2. Use `GridSearchCV` to more exhaustively tune hyper-parameters
+3. Try different models!
