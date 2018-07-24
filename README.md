@@ -58,8 +58,7 @@ I ran four different Linear Regression model types:
 <a id='evaluate_model'></a>
 ### Evaluate Model.
 
-** Scores for the models here**
-
+**Scores for all models**
  **Model** | **R^2 Score (Train)** | **R^2 Score (Test)** 
  --- |	--- | --- 
  Linear Regression 	|	0.726	| 0.675 
