@@ -1,6 +1,6 @@
 # DSI_Project_Ames
 
-<img src="./housesbanner.png" style="float: left; margin: 20px; height: 55px">
+![housebanner](housesbanner.png)
 
 ### Predicting Housing Prices in Ames, IA
 _Jamie Quella - 5/17/18_
