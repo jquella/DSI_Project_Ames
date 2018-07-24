@@ -59,6 +59,7 @@ I ran four different Linear Regression model types:
 ### Evaluate Model.
 
 **Scores for all models**
+
  **Model** | **R^2 Score (Train)** | **R^2 Score (Test)** 
  --- |	--- | --- 
  Linear Regression 	|	0.726	| 0.675 
