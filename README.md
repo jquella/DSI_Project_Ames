@@ -19,5 +19,21 @@ _Jamie Quella - 5/17/18_
 **Can we predict housing prices in Ames, IA to make sure I'm not underselling my home given its features?**
 - We will be 
 
-<a id='define_question'></a>
-### Define the Question.
+<a id='gather_data'></a>
+### Gather Data.
+All data collected from [Kaggle competition page](https://www.kaggle.com/c/house-prices-advanced-regression-techniques "Ames Kaggle Competition").
+
+Let's load in the necessary notebooks.
+
+`### IMPORT FEST!!
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+import scipy.stats as stats
+import sklearn.metrics as metrics
+%matplotlib inline`
+
+In addition, I wrote some handy functions for EDA/cleaning and plotting. See `help(notebook_starter)` and `help(plotter)` for more info.
+`from notebook_starter import *
+from plotter import *`
