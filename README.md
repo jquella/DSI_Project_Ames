@@ -23,18 +23,12 @@ _Jamie Quella - 5/17/18_
 ### Gather Data.
 All data collected from [Kaggle competition page](https://www.kaggle.com/c/house-prices-advanced-regression-techniques "Ames Kaggle Competition").
 
-Let's load in the necessary notebooks.
+In addition, I wrote some handy functions for EDA/cleaning and plotting to use.
 
-```# Import Fest
-import numpy as np
-import pandas as pd  
-import matplotlib.pyplot as plt  
-import seaborn as sns  
-import scipy.stats as stats  
-import sklearn.metrics as metrics  
-%matplotlib inline
+<a id='explore_data'></a>
+### Explore Data.
+First I took a look at all of the columns to check out the null values in the dataset, specifically trying to find columns which were:
+	- Overwhelmingly null, and should be dropped, or
+	- Partially null, and might have values imputed
 
-from notebook_starter import *
-from plotter import *
-```
-^^^ In addition, I wrote some handy functions for EDA/cleaning and plotting. See `help(notebook_starter)` and `help(plotter)` for more info.
+<img src="https://i.imgur.com/tALOGHd.png">
