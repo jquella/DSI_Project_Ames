@@ -91,3 +91,5 @@ The next iterations of models should perhaps account for outliers in some way to
     - Use `itertools.combinations` to try more variations of feature combos
 2. Use `GridSearchCV` to more exhaustively tune hyper-parameters
 3. Try different models!
+
+[Jupyter notebook with full code available here](https://github.com/jquella/DSI_Project_Ames/blob/master/project-2_JQ_take2.ipynb)
