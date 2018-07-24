@@ -25,15 +25,15 @@ All data collected from [Kaggle competition page](https://www.kaggle.com/c/house
 
 Let's load in the necessary notebooks.
 
-`### IMPORT FEST!!  
-import numpy as np\n
+```# Import Fest
+import numpy as np
 import pandas as pd  
 import matplotlib.pyplot as plt  
 import seaborn as sns  
 import scipy.stats as stats  
 import sklearn.metrics as metrics  
-%matplotlib inline`  
+%matplotlib inline```
 
 In addition, I wrote some handy functions for EDA/cleaning and plotting. See `help(notebook_starter)` and `help(plotter)` for more info.
-`from notebook_starter import *
-from plotter import *`
+```from notebook_starter import *
+from plotter import *```
