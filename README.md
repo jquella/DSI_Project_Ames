@@ -68,7 +68,9 @@ I ran four different Linear Regression model types:
  Elastic Net 			|	0.774	| 0.697 
 
 These R^2 scores are not ideal. While being able to explain nearly 80% of the variance in house price seems good, it can likely be improved. This mainly seems to be in part due to a large outlier in the predictions:
+
 <img src="https://i.imgur.com/7irAXIT.png">
+
 In exploring the data further, it seems that this was likely due to a single outlier data point in one of the strongest features: `Gr Liv Area` - or above ground living area.
 <img src="https://i.imgur.com/7wVnQJe.png">
 
