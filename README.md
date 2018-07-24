@@ -17,7 +17,6 @@ _Jamie Quella - 5/17/18_
 <a id='define_question'></a>
 ### Define the Question.
 **Can we predict housing prices in Ames, IA to make sure I'm not underselling my home given its features?**
-- We will be 
 
 <a id='gather_data'></a>
 ### Gather Data.
@@ -31,4 +30,18 @@ First I took a look at all of the columns to check out the null values in the da
 	- Overwhelmingly null, and should be dropped, or
 	- Partially null, and might have values imputed
 
-<img src="https://i.imgur.com/tALOGHd.png">
+<img src="https://i.imgur.com/fB0IXZZ.png">
+
+I did a check of % of null values per column and decided to eliminate some columns that have too many nulls to be worthwhile: `['Pool QC', 'Misc Feature', 'Alley', 'Fence', 'Fireplace Qu']`.
+
+For this exercise, I also decided to drop all categorical variables to be able to more easily run different linear regression types. Some features appeared numerical, but were in fact categorical (e.g. `Year Built`).
+
+The next step was to explore *feature correlations*. I did this by making a heatmap of the correlation matrix of the remaining features:
+
+<img src="https://i.imgur.com/3MP09gR.png">
+
+While a couple of features look highly correlated, we will be using some regularization techniques to drop those later.
+
+Lastly, I needed to find out if there were still *null values* sticking around, which there were. The most important feature, `Lot Frontage`, we imputed by `Lot Shape`, which seemed intuitive.
+
+<img src="https://i.imgur.com/EmFe7S0.png">
