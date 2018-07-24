@@ -50,8 +50,8 @@ Lastly, I needed to find out if there were still *null values* sticking around, 
 ### Model Data.
 
 
-| **Model**				|	**R^2 Score (Train)** |	**R^2 Score (Test)** |
-| ---					|	---
+| **Model** | **R^2 Score (Train)** | **R^2 Score (Test)** |
+| --- |	--- | --- | --- |
 | Linear Regression 	|	0.726	| 0.675 |
 | Ridge Regression		|	0.773	| 0.700 |
 | Lasso Regression 		|	0.773	| 0.700 |
