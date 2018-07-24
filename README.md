@@ -22,7 +22,7 @@ _Jamie Quella - 5/17/18_
 ### Gather Data.
 All data collected from [Kaggle competition page](https://www.kaggle.com/c/house-prices-advanced-regression-techniques "Ames Kaggle Competition").
 
-In addition, I wrote some handy functions for EDA/cleaning and plotting to use.
+In addition, I wrote some handy functions for EDA/cleaning and plotting to use later, found in the `notebook_starter.py` and `plotter.py` files.
 
 <a id='explore_data'></a>
 ### Explore Data.
@@ -44,4 +44,8 @@ While a couple of features look highly correlated, we will be using some regular
 
 Lastly, I needed to find out if there were still *null values* sticking around, which there were. The most important feature, `Lot Frontage`, we imputed by `Lot Shape`, which seemed intuitive.
 
-<img src="https://i.imgur.com/EmFe7S0.png">
+<img src="https://i.imgur.com/WgNTP4a.png">
+
+<a id='model_data'></a>
+### Model Data.
+
