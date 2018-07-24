@@ -26,7 +26,7 @@ All data collected from [Kaggle competition page](https://www.kaggle.com/c/house
 Let's load in the necessary notebooks.
 
 `### IMPORT FEST!!  
-import numpy as np  
+import numpy as np\n
 import pandas as pd  
 import matplotlib.pyplot as plt  
 import seaborn as sns  
