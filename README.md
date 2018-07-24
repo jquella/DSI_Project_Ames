@@ -34,6 +34,7 @@ import scipy.stats as stats
 import sklearn.metrics as metrics  
 %matplotlib inline
 
-## In addition, I wrote some handy functions for EDA/ ## cleaning and plotting. See `help(notebook_starter)` ## and `help(plotter)` for more info.
-```from notebook_starter import *
-from plotter import *```
+from notebook_starter import *
+from plotter import *
+```
+^^^ In addition, I wrote some handy functions for EDA/cleaning and plotting. See `help(notebook_starter)` and `help(plotter)` for more info.
