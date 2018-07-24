@@ -24,7 +24,7 @@ def plot_groupby(df, column, grouping, summary='mean'):
         except:
             pass
 
-    sns.barplot(x=sorted(test), y=[i for i in df.groupby(grouping)[column].agg(summary)]);
+    sns.barplot(x=sorted(test), y=[i for i in df.groupby(grouping)[column].agg(summary)], color='blue');
 
 
 '''
