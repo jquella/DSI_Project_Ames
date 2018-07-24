@@ -70,7 +70,7 @@ These R^2 scores are not ideal. While being able to explain nearly 80% of the va
 
 <img src="https://i.imgur.com/7irAXIT.png">
 
-In exploring the data further, it seems that this was likely due to a single outlier data point in one of the strongest features: `Gr Liv Area` - or above ground living area.
+In exploring the data further, it seems that this was likely due to a single outlier data point in one of the strongest features: `GrLivArea` - or above ground living area.
 <img src="https://i.imgur.com/7wVnQJe.png">
 
 The next iterations of models should perhaps account for outliers in some way to generate better predictions.
