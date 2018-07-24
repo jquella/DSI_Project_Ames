@@ -1,6 +1,6 @@
 # DSI_Project_Ames
 
-<img src="https://kaggle2.blob.core.windows.net/competitions/kaggle/5407/logos/front_page.png" style="float: left; margin: 20px; height: 55px">
+<img src="./housesbanner.png" style="float: left; margin: 20px; height: 55px">
 
 ### Predicting Housing Prices in Ames, IA
 _Jamie Quella - 5/17/18_
